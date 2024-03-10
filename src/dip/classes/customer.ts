@@ -4,13 +4,11 @@ export class IndividualCustomer implements IndividualCustomerProtocol, CustomerO
   firstname: string;
   lastname: string;
   cpf: string;
-  cnpj: string;
 
   constructor(firstname: string, lastname: string, cpf: string) {
     this.firstname = firstname;
     this.lastname = lastname;
     this.cpf = cpf;
-    this.cnpj = '';
   }
   getName(): string {
     return this.firstname + ' ' + this.lastname;
